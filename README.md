@@ -21,16 +21,6 @@ Este proyecto incluye dos ejercicios:
 
 - videogames_reviews.csv
 
-## Objetivo principal
-
-Diseñar un pipeline con LLMs para:
-
-1. Filtrar reseñas relevantes.
-2. Extraer información estructurada de las reseñas seleccionadas.
------------------------------------------
-
-
-
 ## Objetivo
 
 El objetivo principal es diseñar prompts claros y controlados para transformar texto libre en información estructurada.
