@@ -55,15 +55,15 @@ notebooks/trabajo_final_prompt_engineering.ipynb
 
 El notebook incluye:
 
-carga y exploración de datasets,
-selección de textos largos,
-diseño de prompts,
-llamadas a la API de OpenAI,
-filtrado de reseñas relevantes,
-extracción estructurada en JSON,
-conversión a DataFrame,
-exportación de resultados finales,
-justificación técnica de las decisiones tomadas.
+- carga y exploración de datasets
+- selección de textos largos
+- diseño de prompts
+- llamadas a la API de OpenAI
+- filtrado de reseñas relevantes
+- extracción estructurada en JSON
+- conversión a DataFrame
+- exportación de resultados finales
+- justificación técnica de las decisiones tomadas
 
 ## Modelo utilizado
 
@@ -75,15 +75,11 @@ La elección se justifica por ser un modelo rápido, económico y adecuado para 
 
 ## Configuración de API key
 
-El proyecto usa un archivo .env para guardar la clave de OpenAI.
-
-Crear un archivo .env en la raíz del proyecto con el siguiente contenido:
-
-OPENAI_API_KEY=your_openai_api_key_here
-
-El archivo .env real no se incluye en el repositorio por seguridad.
-
-Se proporciona .env.example como referencia.
+1. El proyecto usa un archivo .env para guardar la clave de OpenAI.
+2. Crear un archivo .env en la raíz del proyecto con el siguiente contenido:
+``OPENAI_API_KEY=your_openai_api_key_here``
+3. El archivo .env real no se incluye en el repositorio por seguridad.
+3. Se proporciona .env.example como referencia.
 
 ## Resultados generados
 
@@ -95,17 +91,17 @@ results/ejercicio2_analisis_videojuegos_resultado_final.csv
 
 ## Decisiones técnicas principales
 
-Se usa salida en formato JSON para facilitar la conversión a DataFrame.
-Se aplica temperatura baja para obtener respuestas estables y consistentes.
-Se separan las tareas en dos prompts principales: filtrado y extracción.
-Se usa time.sleep() entre llamadas para reducir problemas con límites de uso de la API.
-Se procesa una reseña por llamada para evitar problemas de longitud de contexto y controlar mejor las respuestas.
+- Se usa salida en formato JSON para facilitar la conversión a DataFrame.
+- Se aplica temperatura baja para obtener respuestas estables y consistentes.
+- Se separan las tareas en dos prompts principales: filtrado y extracción.
+- Se usa time.sleep() entre llamadas para reducir problemas con límites de uso de la API.
+- Se procesa una reseña por llamada para evitar problemas de longitud de contexto y controlar mejor las respuestas.
 
 ## Ejecución
 
-Crear y activar un entorno virtual.
-Instalar dependencias:
-pip install -r requirements.txt
-Configurar el archivo .env.
-Abrir y ejecutar el notebook principal:
-notebooks/trabajo_final_prompt_engineering.ipynb
+1. Crear y activar un entorno virtual.
+2. Instalar dependencias:
+- pip install -r requirements.txt
+- Configurar el archivo .env.
+3. Abrir y ejecutar el notebook principal:
+- notebooks/trabajo_final_prompt_engineering.ipynb
